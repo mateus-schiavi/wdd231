@@ -1,4 +1,6 @@
+/* ============================= */
 /* CSS Reset */
+/* ============================= */
 *,
 *::before,
 *::after {
@@ -16,9 +18,11 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+/* Responsive images and media */
 img, picture, video, canvas {
-    display: flex;
+    display: block;
     max-width: 100%;
+    height: auto;
 }
 
 input, button, textarea, select {
@@ -27,7 +31,7 @@ input, button, textarea, select {
 
 a {
     text-decoration: none;
-    color: inherit
+    color: inherit;
 }
 
 ul, ol {
@@ -38,7 +42,8 @@ ul, ol {
 /* WEBSITE STYLES */
 /* ============================= */
 
-header{
+/* Header */
+header {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -47,12 +52,18 @@ header{
     padding: 15px 40px;
 }
 
-nav a{
+nav a {
     margin-left: 20px;
     color: white;
     font-weight: bold;
+    transition: color 0.3s ease, background 0.3s ease;
 }
 
+nav a:hover {
+    color: #ffd700; /* optional highlight on hover */
+}
+
+/* Hero Section */
 .hero {
     position: relative;
 }
@@ -73,15 +84,22 @@ nav a{
     color: white;
     border-radius: 6px;
     cursor: pointer;
+    transition: background 0.3s ease;
 }
 
+.hero-btn:hover {
+    background: #555;
+}
+
+/* Home Title */
 .home-title {
     margin: 20px 40px;
 }
 
+/* Home Grid */
 .home-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
     gap: 20px;
     padding: 0 40px 30px 40px;
 }
@@ -92,28 +110,59 @@ nav a{
     border-radius: 6px;
 }
 
+/* Business Grid */
 .business-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
     gap: 20px;
     padding: 20px 40px;
 }
 
-.business-card{
+.business-card {
     background: white;
     padding: 20px;
     border-radius: 6px;
 }
 
+/* Footer */
 footer {
     background: #333;
     color: white;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     padding: 25px 40px;
     margin-top: 30px;
 }
 
+/* Headings */
 h1, h2, h3, h4 {
     margin-bottom: 10px;
+}
+
+/* ============================= */
+/* RESPONSIVE GRID */
+/* ============================= */
+@media (max-width: 900px) {
+    .home-grid,
+    .business-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 600px) {
+    .home-grid,
+    .business-grid {
+        grid-template-columns: 1fr;
+    }
+
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav a {
+        margin-left: 0;
+        margin-top: 10px;
+    }
 }
