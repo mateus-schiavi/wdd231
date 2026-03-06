@@ -28,28 +28,25 @@ nav a:hover {
 .hero {
     position: relative;
     text-align: center;
+    margin-bottom: 40px; /* space below hero */
+}
+
+.hero h2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    background-color: rgba(0,0,0,0.5);
+    padding: 12px 24px;
+    border-radius: 6px;
+    font-size: 2rem;
 }
 
 .hero img {
     width: 100%;
     height: auto;
-}
-
-.hero-btn {
-    position: absolute;
-    bottom: 20px;
-    right: 20px;
-    padding: 12px 20px;
-    border: none;
-    background: #444;
-    color: white;
-    border-radius: 6px;
-    cursor: pointer;
-    transition: background 0.3s ease;
-}
-
-.hero-btn:hover {
-    background: #555;
+    display: block;
 }
 
 /* Page title */
@@ -57,25 +54,26 @@ nav a:hover {
     margin: 20px 40px;
 }
 
-/* Home Grid */
-.home-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-    padding: 0 40px 30px 40px;
+/* EVENTS SECTION */
+.events {
+    padding: 20px 40px;
+    background-color: #f5f5f5;
+    border-radius: 6px;
+    margin-bottom: 40px;
 }
 
-.home-grid div {
-    background: white;
-    padding: 20px;
-    border-radius: 6px;
+.events h2 {
+    margin-bottom: 15px;
+}
+
+.events ul {
+    list-style: disc inside;
 }
 
 /* ============================= */
 /* COURSES SECTION */
 /* ============================= */
 
-/* Wrapper da seção de cursos — NÃO é o grid */
 .courses-section {
     padding: 20px 40px;
 }
@@ -148,18 +146,33 @@ h1, h2, h3, h4 {
 }
 
 /* ============================= */
+/* TOTAL CREDITS STYLING */
+/* ============================= */
+
+.total-credits {
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 1.2rem;
+    text-align: center; /* center below grid */
+    color: #333;
+}
+
+/* Ensure spacing between last course card and total credits */
+.courses-grid + .total-credits {
+    margin-top: 30px;
+}
+
+/* ============================= */
 /* RESPONSIVE GRIDS */
 /* ============================= */
 
 @media (max-width: 900px) {
-    .home-grid,
     .courses-grid {
         grid-template-columns: 1fr 1fr;
     }
 }
 
 @media (max-width: 600px) {
-    .home-grid,
     .courses-grid {
         grid-template-columns: 1fr;
     }
@@ -174,7 +187,13 @@ h1, h2, h3, h4 {
         margin-top: 10px;
     }
 
-    .courses-section {
+    .courses-section,
+    .events,
+    .hero {
         padding: 20px;
+    }
+
+    .hero h2 {
+        font-size: 1.5rem;
     }
 }
