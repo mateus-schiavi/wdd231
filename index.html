@@ -30,8 +30,14 @@
         <div class="logo">
             <h2>Suzano Chamber of Commerce</h2>
         </div>
-        <nav>
-            <a href="index.html">Home</a>
+
+        <!-- Burger Button -->
+        <button id="menu-button" aria-label="Open navigation menu">
+            ☰
+        </button>
+
+        <nav id="main-nav">
+            <a href="index.html" class="active">Home</a>
             <a href="#">Directory</a>
             <a href="#">Join</a>
             <a href="#">Discover</a>
@@ -41,10 +47,12 @@
     <!-- MAIN CONTENT -->
     <main>
 
+        <h1>Welcome to the Suzano Chamber of Commerce</h1>
+
         <!-- HERO SECTION -->
         <section class="hero">
             <h2>Welcome to Suzano</h2>
-            <img src="images/suzano.jpg" alt="Suzano City">
+            <img src="images/suzano.jpg" alt="View of Suzano city in São Paulo, Brazil" loading="lazy">
         </section>
 
         <!-- EVENTS SECTION -->
@@ -61,15 +69,9 @@
         <section class="courses-section">
             <h2>Courses</h2>
 
-            <!-- Courses Grid -->
-            <div class="courses-grid" id="courses-container">
-                <!-- Courses will be dynamically injected here -->
-            </div>
+            <div class="courses-grid" id="courses-container"></div>
 
-            <!-- Total Credits -->
-            <div id="total-credits" class="total-credits">
-                <!-- Total will be displayed here -->
-            </div>
+            <div id="total-credits" class="total-credits"></div>
         </section>
 
     </main>

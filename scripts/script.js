@@ -1,4 +1,8 @@
 document.getElementById("lastModified").textContent = document.lastModified;
 
-const temperature = document.getElementById("temperature");
-const description = document.getElementById("description");
+const menuButton = document.getElementById("menu-button");
+const nav = document.getElementById("main-nav");
+
+menuButton.addEventListener("click", () => {
+    nav.classList.toggle("open");
+});
