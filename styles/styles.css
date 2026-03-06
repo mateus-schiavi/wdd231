@@ -10,28 +10,29 @@ header {
     background: #333;
     color: white;
     padding: 15px 40px;
+    flex-wrap: wrap;
 }
 
 nav a {
     margin-left: 20px;
     color: white;
     font-weight: bold;
-    transition: color 0.3s ease, background 0.3s ease;
+    transition: color 0.3s ease;
 }
 
 nav a:hover {
-    color: #ffd700; /* optional highlight on hover */
+    color: #ffd700;
 }
 
 /* Hero Section */
 .hero {
     position: relative;
+    text-align: center;
 }
 
 .hero img {
     width: 100%;
-    height: 300px;
-    object-fit: cover;
+    height: auto;
 }
 
 .hero-btn {
@@ -51,7 +52,7 @@ nav a:hover {
     background: #555;
 }
 
-/* Home Title */
+/* Page title */
 .home-title {
     margin: 20px 40px;
 }
@@ -70,18 +71,31 @@ nav a:hover {
     border-radius: 6px;
 }
 
-/* Business Grid */
-.business-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
+/* ============================= */
+/* COURSES SECTION */
+/* ============================= */
+
+/* Wrapper da seção de cursos — NÃO é o grid */
+.courses-section {
     padding: 20px 40px;
 }
 
-.business-card {
+.courses-section h2 {
+    margin-bottom: 15px;
+}
+
+/* Grid de cards de curso */
+.courses-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.course-card {
     background: white;
     padding: 20px;
     border-radius: 6px;
+    border: 1px solid #ccc;
 }
 
 /* Footer */
@@ -101,18 +115,52 @@ h1, h2, h3, h4 {
 }
 
 /* ============================= */
-/* RESPONSIVE GRID */
+/* COURSE FILTER BUTTONS */
 /* ============================= */
+
+.course-filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.course-filters .filter-btn {
+    padding: 8px 16px;
+    border: 1px solid #333;
+    border-radius: 4px;
+    background-color: white;
+    color: #333;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.course-filters .filter-btn:hover {
+    background-color: #333;
+    color: white;
+}
+
+.course-filters .filter-btn.active {
+    background-color: #333;
+    color: white;
+    border-color: #333;
+}
+
+/* ============================= */
+/* RESPONSIVE GRIDS */
+/* ============================= */
+
 @media (max-width: 900px) {
     .home-grid,
-    .business-grid {
+    .courses-grid {
         grid-template-columns: 1fr 1fr;
     }
 }
 
 @media (max-width: 600px) {
     .home-grid,
-    .business-grid {
+    .courses-grid {
         grid-template-columns: 1fr;
     }
 
@@ -124,5 +172,9 @@ h1, h2, h3, h4 {
     nav a {
         margin-left: 0;
         margin-top: 10px;
+    }
+
+    .courses-section {
+        padding: 20px;
     }
 }

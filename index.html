@@ -8,8 +8,7 @@
     <title>Suzano Chamber of Commerce</title>
 
     <meta name="description"
-        content="Official website of the Suzano Chamber of Commerce featuring local events, weather, and businesses in Suzano, São Paulo.">
-
+        content="Official website of the Suzano Chamber of Commerce featuring local events, weather, and courses in Suzano, São Paulo.">
     <meta name="author" content="Mateus Schiavi">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -18,7 +17,10 @@
 
     <link rel="stylesheet" href="styles/reset.css">
     <link rel="stylesheet" href="styles/styles.css">
+
     <script src="scripts/script.js" defer></script>
+    <script src="scripts/courses.js" defer></script>
+    <script src="scripts/renderCourses.js" defer></script>
 </head>
 
 <body>
@@ -42,60 +44,31 @@
         <!-- HERO SECTION -->
         <section class="hero">
             <img src="images/suzano.jpg" alt="Suzano City">
-            <button class="hero-btn">Event Tickets</button>
         </section>
 
         <!-- PAGE TITLE -->
         <h1 class="home-title">Home</h1>
 
         <!-- HOME GRID -->
-        <section class="home-grid">
-            <div class="events">
+        <div class="home-grid">
+            <!-- EVENTS SECTION -->
+            <section class="events">
                 <h2>Events in Suzano</h2>
                 <ul>
                     <li>Cherry Blossom Festival</li>
                     <li>Suzano Gastronomic Fair</li>
                     <li>Alto Tietê Cultural Festival</li>
                 </ul>
-            </div>
+            </section>
+        </div>
 
-            <div class="weather">
-                <h2>Current Weather</h2>
-                <p id="temperature">Loading...</p>
-                <p id="description"></p>
-            </div>
+        <!-- COURSES SECTION -->
+        <section class="courses-section">
+            <h2>Courses</h2>
 
-            <div class="forecast">
-                <h2>Weather Forecast</h2>
-                <ul>
-                    <li>Today: 84°F</li>
-                    <li>Wednesday: 82°F</li>
-                    <li>Thursday: 77°F</li>
-                </ul>
-            </div>
-        </section>
-
-        <!-- BUSINESS GRID -->
-        <section class="business-grid">
-            <div class="business-card">
-                <h3>Suzano Bakery</h3>
-                <p>Email: contact@suzanobakery.com</p>
-                <p>Phone: +55 11 4002-8922</p>
-                <p>Website: suzanobakery.com</p>
-            </div>
-
-            <div class="business-card">
-                <h3>Suzano Central Market</h3>
-                <p>Email: contact@suzanomarket.com</p>
-                <p>Phone: +55 11 4747-3000</p>
-                <p>Website: suzanomarket.com</p>
-            </div>
-
-            <div class="business-card">
-                <h3>Suzano Plaza Hotel</h3>
-                <p>Email: reservations@suzanoplaza.com</p>
-                <p>Phone: +55 11 4748-2000</p>
-                <p>Website: suzanoplaza.com</p>
+            <!-- Courses Grid -->
+            <div class="courses-grid" id="courses-container">
+                <!-- Courses will be dynamically injected here -->
             </div>
         </section>
 
