@@ -1,0 +1,344 @@
+/* ============================= */
+/* WEBSITE STYLES */
+/* ============================= */
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #fafafa;
+}
+
+/* ============================= */
+/* HEADER */
+/* ============================= */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #333;
+    color: white;
+    padding: 15px 40px;
+    flex-wrap: wrap;
+}
+
+.logo {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+nav {
+    display: flex;
+}
+
+nav a {
+    margin-left: 20px;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s ease;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #ffd700;
+}
+
+nav a.active {
+    border-bottom: 2px solid #ffd700;
+}
+
+/* ============================= */
+/* BURGER MENU */
+/* ============================= */
+
+#menu-button {
+    display: none;
+    font-size: 1.8rem;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+/* ============================= */
+/* MAIN TITLE */
+/* ============================= */
+
+main h1 {
+    margin: 30px 40px 10px 40px;
+    font-size: 2rem;
+}
+
+/* ============================= */
+/* HERO SECTION */
+/* ============================= */
+
+.hero {
+    position: relative;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.hero h2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    background-color: rgba(0,0,0,0.5);
+    padding: 12px 24px;
+    border-radius: 6px;
+    font-size: 2rem;
+}
+
+/* ============================= */
+/* EVENTS SECTION */
+/* ============================= */
+
+.events {
+    padding: 20px 40px;
+    background-color: #f5f5f5;
+    border-radius: 6px;
+    margin-bottom: 40px;
+}
+
+.events h2 {
+    margin-bottom: 15px;
+}
+
+.events ul {
+    list-style: disc inside;
+}
+
+/* ============================= */
+/* COURSES SECTION */
+/* ============================= */
+
+.courses-section {
+    padding: 20px 40px;
+}
+
+.courses-section h2 {
+    margin-bottom: 15px;
+}
+
+.courses-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.course-card {
+    background: white;
+    padding: 20px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+/* ============================= */
+/* COURSE FILTER BUTTONS */
+/* ============================= */
+
+.course-filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.filter-btn {
+    padding: 8px 16px;
+    border: 1px solid #333;
+    border-radius: 4px;
+    background-color: white;
+    color: #333;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.filter-btn:hover {
+    background-color: #333;
+    color: white;
+}
+
+.filter-btn.active {
+    background-color: #333;
+    color: white;
+}
+
+/* ============================= */
+/* TOTAL CREDITS */
+/* ============================= */
+
+.total-credits {
+    margin-top: 30px;
+    font-weight: bold;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+/* ============================= */
+/* DIRECTORY VIEW BUTTONS */
+/* ============================= */
+
+.view-buttons {
+    margin: 20px 40px;
+}
+
+.view-buttons button {
+    padding: 8px 14px;
+    margin-right: 10px;
+    border: 1px solid #333;
+    background: white;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 4px;
+}
+
+.view-buttons button:hover {
+    background: #333;
+    color: white;
+}
+
+/* ============================= */
+/* MEMBERS DIRECTORY GRID */
+/* ============================= */
+
+#members {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px 40px;
+}
+
+#members section {
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.2s ease;
+}
+
+#members section:hover {
+    transform: translateY(-5px);
+}
+
+/* ============================= */
+/* MEMBER IMAGES */
+/* ============================= */
+
+#members img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 6px;
+    margin-bottom: 10px;
+}
+
+/* ============================= */
+/* LIST VIEW */
+/* ============================= */
+
+#members.list {
+    display: block;
+}
+
+#members.list section {
+    display: flex;
+    align-items: center;
+    text-align: left;
+    gap: 20px;
+}
+
+#members.list img {
+    width: 120px;
+    height: 120px;
+}
+
+/* ============================= */
+/* FOOTER */
+/* ============================= */
+
+footer {
+    background: #333;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 25px 40px;
+    margin-top: 40px;
+}
+
+/* ============================= */
+/* HEADINGS */
+/* ============================= */
+
+h1, h2, h3, h4 {
+    margin-bottom: 10px;
+}
+
+/* ============================= */
+/* RESPONSIVE */
+/* ============================= */
+
+@media (max-width: 900px) {
+
+    .courses-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+}
+
+/* ============================= */
+/* MOBILE NAVIGATION */
+/* ============================= */
+
+@media (max-width: 600px) {
+
+    #menu-button {
+        display: block;
+    }
+
+    #main-nav {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background: #333;
+    }
+
+    #main-nav.open {
+        display: flex;
+    }
+
+    nav a {
+        margin: 0;
+        padding: 12px 0;
+        border-top: 1px solid rgba(255,255,255,0.2);
+        text-align: center;
+    }
+
+    .courses-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .courses-section,
+    .events {
+        padding: 20px;
+    }
+
+    .hero h2 {
+        font-size: 1.5rem;
+    }
+
+    #members {
+        padding: 20px;
+    }
+
+}

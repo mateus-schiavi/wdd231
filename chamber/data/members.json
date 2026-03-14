@@ -1,0 +1,58 @@
+[
+{
+"name": "Joe's Bakery",
+"address": "12 Bread Street",
+"phone": "555-1111",
+"website": "https://joesbakery.com",
+"image": "bakery.jpg",
+"membership": 1
+},
+{
+"name": "City Gym",
+"address": "45 Fitness Ave",
+"phone": "555-2222",
+"website": "https://citygym.com",
+"image": "gym.jpg",
+"membership": 2
+},
+{
+"name": "Bright Dental",
+"address": "78 Smile Road",
+"phone": "555-3333",
+"website": "https://brightdental.com",
+"image": "dental.jpg",
+"membership": 3
+},
+{
+"name": "Green Grocery",
+"address": "90 Market Street",
+"phone": "555-4444",
+"website": "https://greengrocery.com",
+"image": "grocery.jpg",
+"membership": 1
+},
+{
+"name": "Quick Auto Repair",
+"address": "33 Garage Lane",
+"phone": "555-5555",
+"website": "https://quickauto.com",
+"image": "auto.jpg",
+"membership": 2
+},
+{
+"name": "Happy Books",
+"address": "21 Library Ave",
+"phone": "555-6666",
+"website": "https://happybooks.com",
+"image": "books.jpg",
+"membership": 1
+},
+{
+"name": "Tech Store",
+"address": "50 Digital Blvd",
+"phone": "555-7777",
+"website": "https://techstore.com",
+"image": "tech.jpg",
+"membership": 3
+}
+]
