@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Join the Suzano Chamber of Commerce.">
+    <meta name="author" content="Mateus Schiavi">
+    <meta property="og:title" content="Suzano Chamber of Commerce - Local Business Hub">
+    <meta property="og:description"
+        content="Explore local businesses in Suzano and connect with our growing community. Supporting innovation and economic development.">
+    <meta property="og:image" content="https://mateus-schiavi.github.io/wdd231/chamber/images/og-image.jpg">
+    <meta property="og:url" content="https://mateus-schiavi.github.io/wdd231/chamber">
+    <meta property="og:type" content="website">
+    <title>Suzano Chamber of Commerce | Join</title>
+    <link rel="stylesheet" href="./styles/normalize.css">
+    <link rel="stylesheet" href="./styles/join.css">
+    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <script src="scripts/join.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <h2>Chamber of Commerce | Join</h2>
+        </div>
+
+        <button id="menu-button" aria-label="Open navigation menu">☰</button>
+
+        <nav id="main-nav">
+            <a href="index.html">Home</a>
+            <a href="directory.html">Directory</a>
+            <a href="join.html" class="active">Join</a>
+            <a href="#">Discover</a>
+        </nav>
+    </header>
+
+    <main class="join-container">
+
+        <!-- FORM -->
+        <form method="get" action="thankyou.html" class="join-form">
+
+            <label>
+                First Name
+                <input type="text" name="fname" required title="First Name" autocomplete="given-name">
+            </label>
+
+            <label>Last Name
+                <input type="text" name="lname" required title="Last Name" autocomplete="family-name">
+            </label>
+
+            <label>Organization Title
+                <input type="text" name="orgtitle" title="Minimum 7 characters, letters, spaces, hyphens only"
+                    autocomplete="organization-title" pattern="[A-Za-z\\-\\s]{7,}">
+            </label>
+
+            <label>Email
+                <input type="email" name="email" required title="Email" placeholder="example@email.com"
+                    autocomplete="email">
+            </label>
+
+            <label>Mobile Phone
+                <input type="tel" name="phone" required title="Phone" autocomplete="tel">
+            </label>
+
+            <label>Membership Level
+                <select name="membership">
+                    <option value="np">NP Membership</option>
+                    <option value="bronze">Bronze</option>
+                    <option value="silver">Silver</option>
+                    <option value="gold">Gold</option>
+                </select>
+            </label>
+
+            <label>Description
+                <textarea name="description" title="Business description"></textarea>
+            </label>
+
+            <input type="hidden" name="timestamp" id="timestamp">
+
+            <input type="submit" value="Join the Chamber">
+        </form>
+
+        <section class="membership-cards">
+            <div class="card">
+                <h3>NP Membership</h3>
+                <a href="#" data-modal="npModal" aria-label="View NP Membership Benefits">View Benefits</a>
+            </div>
+
+            <div class="card">
+                <h3>Bronze Membership</h3>
+                <a href="#" data-modal="bronzeModal">View Benefits</a>
+            </div>
+
+            <div class="card">
+                <h3>Silver Membership</h3>
+                <a href="#" data-modal="silverModal">View Benefits</a>
+            </div>
+            <div class="card">
+                <h3>Gold Membership</h3>
+                <a href="#" data-modal="goldModal">View Benefits</a>
+            </div>
+        </section>
+    </main>
+
+    <dialog id="npModal">
+    <h2>NP Membership Benefits</h2>
+    <p><strong>Note:</strong> This membership is designed for non-profit organizations.</p>
+    <ul>
+        <li>No membership fee</li>
+        <li>Basic directory listing</li>
+        <li>Community networking</li>
+    </ul>
+    <button class="close">Close</button>
+</dialog>
+
+    <dialog id="bronzeModal">
+    <h2>Bronze Membership Benefits</h2>
+    <p><strong>Notice:</strong> Entry-level paid membership.</p>
+    <ul>
+        <li>Event participation</li>
+        <li>Basic advertising opportunities</li>
+        <li>Networking events</li>
+    </ul>
+    <button class="close">Close</button>
+</dialog>
+
+    <dialog id="silverModal">
+        <h2>Silver Membership Benefits</h2>
+        <p><strong>Notice:</strong> This level adds more visibility and training opportunities.</p>
+        <ul>
+            <li>Business training programs</li>
+            <li>Event discounts</li>
+            <li>Featured directory listing</li>
+        </ul>
+        <button class="close">Close</button>
+    </dialog>
+
+    <dialog id="goldModal">
+    <h2>Gold Membership Benefits</h2>
+    <p><strong>Important:</strong> This is the highest tier with maximum exposure.</p>
+    <ul>
+        <li>Homepage spotlight</li>
+        <li>Premium advertising placement</li>
+        <li>Exclusive event access</li>
+        <li>Advanced training programs</li>
+    </ul>
+    <button class="close">Close</button>
+</dialog>
+    <footer>
+        <div class="footer-left">
+            <p><strong>Suzano Chamber of Commerce</strong></p>
+            <p>Suzano, São Paulo - Brazil</p>
+            <p>contact@suzanocommerce.org</p>
+        </div>
+
+        <div class="footer-center">
+            <p>WDD231 Class Project</p>
+            <p>Mateus Schiavi</p>
+        </div>
+
+        <div class="footer-right">
+            <p>Last Modified:</p>
+            <p id="lastModified"></p>
+        </div>
+    </footer>
+</body>
+
+</html>
