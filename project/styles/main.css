@@ -18,6 +18,11 @@ body {
     line-height: 1.6;
 }
 
+.visually-hidden {
+  position: absolute;
+  left: -9999px;
+}
+
 h1,
 h2,
 h3 {

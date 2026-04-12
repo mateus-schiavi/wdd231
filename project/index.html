@@ -12,9 +12,9 @@
 
     <link rel="stylesheet" href="./styles/normalize.css">
     <link rel="stylesheet" href="./styles/main.css">
-    <script type="module" src="./scripts/index.js" defer></script>
-    <script type="module" src="./scripts/script.js" defer></script>
-    
+    <script type="module" src="./scripts/index.js"></script>
+    <script type="module" src="./scripts/script.js"></script>
+
 </head>
 
 <body>
@@ -41,14 +41,15 @@
 
     <!-- MAIN CONTENT -->
     <main>
-        <section id="movies-container" aria-live="polite">
-            <!-- JS will inster 15+ movies here -->
+        <section>
+            <h2 class="visually-hidden">Movie List</h2>
+            <div id="movies-container" aria-live="polite"></div>
         </section>
     </main>
 
     <!-- MODAL -->
     <dialog id="movie-modal">
-        <h2 id="modal-title"></h2>
+        <h2 id="modal-title">Movie Details</h2>
         <p id="modal-info"></p>
         <button id="close-modal">Close</button>
     </dialog>
