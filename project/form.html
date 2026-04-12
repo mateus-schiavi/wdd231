@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Mateus Schiavi">
+    <meta name="description" content="Space for movies suggestions">
+    <title>Suggest a Movie</title>
+
+    <link rel="stylesheet" href="./styles/normalize.css">
+    <link rel="stylesheet" href="./styles/main.css">
+    <script type="module" src="./scripts/favorite.js" defer></script>
+    <script type="module" src="./scripts/script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Suggest a Movie</h1>
+
+        <button id="menu-btn" aria-label="Open menu">☰</button>
+
+        <nav id="nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="favorites.html">Favorites</a></li>
+                <li><a href="form.html" aria-current="page">Suggest</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <form action="results.html" method="get">
+
+            <label for="movie">Movie Name</label>
+            <input type="text" id="movie" name="movie" required>
+
+            <label for="genre">Genre</label>
+            <input type="text" id="genre" name="genre" required>
+
+            <label for="year">Year</label>
+            <input type="number" id="year" name="year">
+
+            <button type="submit">Submit</button>
+        </form>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+
+            <div class="footer-left">
+                <p>&copy; <span id="year"></span> Mateus Schiavi</p>
+            </div>
+
+            <div class="footer-center">
+                <p>WDD231 Class Project</p>
+            </div>
+
+            <div class="footer-right">
+                <p>Last Modified:</p>
+                <p id="lastModified"></p>
+            </div>
+
+        </div>
+    </footer>
+</body>
+</html>

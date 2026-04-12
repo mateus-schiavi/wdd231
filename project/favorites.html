@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Mateus Schiavi">
+    <meta name="description" content="Your favorite movies saved in only one place">
+    <title>Favorites - Movie Explorer</title>
+
+    <link rel="stylesheet" href="./styles/normalize.css">
+    <link rel="stylesheet" href="./styles/main.css">
+    <script type="module" src="./scripts/favorites.js" defer></script>
+    <script type="module" src="./scripts/script.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>❤️ Favorites</h1>
+
+        <button id="menu-btn" aria-label="Open menu">☰</button>
+
+        <nav id="nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="favorites.html" aria-current="page">Favorites</a></li>
+                <li><a href="form.html">Suggest</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="favorites-container">
+            <!-- JS will load saved movies -->
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+
+            <div class="footer-left">
+                <p>&copy; <span id="year"></span> Mateus Schiavi</p>
+            </div>
+
+            <div class="footer-center">
+                <p>WDD231 Class Project</p>
+            </div>
+
+            <div class="footer-right">
+                <p>Last Modified:</p>
+                <p id="lastModified"></p>
+            </div>
+
+        </div>
+    </footer>
+</body>
+
+</html>

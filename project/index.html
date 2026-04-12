@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Mateus Schiavi">
+    <meta name="description" content="Browse, save, explore and evaluate your favorite movies with Movie Explorer">
+    <title>Movie Explorer</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&family=Roboto&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./styles/normalize.css">
+    <link rel="stylesheet" href="./styles/main.css">
+    <script type="module" src="./scripts/index.js" defer></script>
+    <script type="module" src="./scripts/script.js" defer></script>
+    
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header>
+        <h1>🎬 Movie Explorer</h1>
+
+        <button id="menu-btn" aria-label="Open menu">☰</button>
+
+        <nav id="nav">
+            <ul>
+                <li><a href="index.html" aria-current="page">Home</a></li>
+                <li><a href="favorites.html">Favorites</a></li>
+                <li><a href="form.html">Suggest</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero">
+        <h2>Discover Movies</h2>
+        <p>Explore, learn more, and save your favorites</p>
+    </section>
+
+    <!-- MAIN CONTENT -->
+    <main>
+        <section id="movies-container" aria-live="polite">
+            <!-- JS will inster 15+ movies here -->
+        </section>
+    </main>
+
+    <!-- MODAL -->
+    <dialog id="movie-modal">
+        <h2 id="modal-title"></h2>
+        <p id="modal-info"></p>
+        <button id="close-modal">Close</button>
+    </dialog>
+    <footer>
+        <div class="footer-container">
+
+            <div class="footer-left">
+                <p>&copy; <span id="year"></span> Mateus Schiavi</p>
+            </div>
+
+            <div class="footer-center">
+                <p>WDD231 Class Project</p>
+            </div>
+
+            <div class="footer-right">
+                <p>Last Modified:</p>
+                <p id="lastModified"></p>
+            </div>
+
+        </div>
+    </footer>
+</body>
+
+</html>

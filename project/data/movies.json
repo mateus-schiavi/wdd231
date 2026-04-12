@@ -1,0 +1,137 @@
+[
+    {
+        "title": "Inception",
+        "year": 2010,
+        "genre": "Sci-Fi",
+        "rating": 8.8,
+        "director": "Christopher Nolan",
+        "duration": "148 min",
+        "description": "A thief enters people's dreams to steal secrets and is given the task of planting an idea."
+    },
+    {
+        "title": "Interstellar",
+        "year": 2014,
+        "genre": "Sci-Fi",
+        "rating": 8.6,
+        "director": "Christopher Nolan",
+        "duration": "169 min",
+        "description": "A team of explorers travels through a wormhole in space to save humanity."
+    },
+    {
+        "title": "The Dark Knight",
+        "year": 2008,
+        "genre": "Action",
+        "rating": 9.0,
+        "director": "Christopher Nolan",
+        "duration": "152 min",
+        "description": "Batman faces the Joker, a criminal mastermind who brings chaos to Gotham City."
+    },
+    {
+        "title": "Avengers: Endgame",
+        "year": 2019,
+        "genre": "Action",
+        "rating": 8.4,
+        "director": "Anthony Russo & Joe Russo",
+        "duration": "181 min",
+        "description": "The Avengers assemble one final time to reverse Thanos' actions and restore balance."
+    },
+    {
+        "title": "Titanic",
+        "year": 1997,
+        "genre": "Romance",
+        "rating": 7.9,
+        "director": "James Cameron",
+        "duration": "195 min",
+        "description": "A love story unfolds aboard the ill-fated RMS Titanic during its maiden voyage."
+    },
+    {
+        "title": "Joker",
+        "year": 2019,
+        "genre": "Drama",
+        "rating": 8.4,
+        "director": "Todd Phillips",
+        "duration": "122 min",
+        "description": "A troubled man descends into madness and becomes the infamous Joker."
+    },
+    {
+        "title": "Frozen",
+        "year": 2013,
+        "genre": "Animation",
+        "rating": 7.4,
+        "director": "Chris Buck & Jennifer Lee",
+        "duration": "102 min",
+        "description": "A princess sets out to find her sister, whose icy powers have trapped their kingdom."
+    },
+    {
+        "title": "Gladiator",
+        "year": 2000,
+        "genre": "Action",
+        "rating": 8.5,
+        "director": "Ridley Scott",
+        "duration": "155 min",
+        "description": "A Roman general seeks revenge after being betrayed and enslaved."
+    },
+    {
+        "title": "Shrek",
+        "year": 2001,
+        "genre": "Comedy",
+        "rating": 7.9,
+        "director": "Andrew Adamson & Vicky Jenson",
+        "duration": "90 min",
+        "description": "An ogre embarks on a journey to rescue a princess and reclaim his swamp."
+    },
+    {
+        "title": "The Matrix",
+        "year": 1999,
+        "genre": "Sci-Fi",
+        "rating": 8.7,
+        "director": "The Wachowskis",
+        "duration": "136 min",
+        "description": "A hacker discovers reality is a simulation and joins a rebellion against machines."
+    },
+    {
+        "title": "Toy Story",
+        "year": 1995,
+        "genre": "Animation",
+        "rating": 8.3,
+        "director": "John Lasseter",
+        "duration": "81 min",
+        "description": "Toys come to life and embark on an adventure when their owner is not around."
+    },
+    {
+        "title": "Up",
+        "year": 2009,
+        "genre": "Animation",
+        "rating": 8.2,
+        "director": "Pete Docter",
+        "duration": "96 min",
+        "description": "An old man ties balloons to his house and flies to South America with a young scout."
+    },
+    {
+        "title": "Avatar",
+        "year": 2009,
+        "genre": "Sci-Fi",
+        "rating": 7.8,
+        "director": "James Cameron",
+        "duration": "162 min",
+        "description": "A marine explores an alien world and becomes part of the native Na'vi culture."
+    },
+    {
+        "title": "Black Panther",
+        "year": 2018,
+        "genre": "Action",
+        "rating": 7.3,
+        "director": "Ryan Coogler",
+        "duration": "134 min",
+        "description": "The king of Wakanda must defend his nation from internal and external threats."
+    },
+    {
+        "title": "Spider-Man",
+        "year": 2002,
+        "genre": "Action",
+        "rating": 7.4,
+        "director": "Sam Raimi",
+        "duration": "121 min",
+        "description": "A teenager gains spider-like abilities and becomes a superhero."
+    }
+]
